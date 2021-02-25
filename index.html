@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page Title</title>
+</head>
+
+<style>
+
+
+
+
+.blockquote-custom {
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.blockquote-custom-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -25px;
+  left: 50px;
+}
+
+
+
+
+
+
+
+h1 {text-align: center;
+font-size:70px;}
+p {
+font-size:25px;}
+
+
+#portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
+  max-width: 1920px;
+}
+#portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box {
+  position: relative;
+  display: block;
+}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  opacity: 0;
+  color: #fff;
+  background: rgba(66, 66, 66, 0.9);
+  transition: opacity 0.25s ease;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.00rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.9rem;
+}
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+
+
+
+
+.top-buffer { margin-top:20px; margin-left:20px; margin-right:20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+ 
+
+<body data-spy="scroll" data-target=".navbar" data-offset=50 >
+
+
+
+<div>
+
+<nav class="navbar navbar-expand-sm bg-dark">
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#about">About</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link text-white" href="#cv">Resume/CV</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#Projects">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white " href="#contact">Contact</a>
+    </li>
+  </ul>
+  </nav>
+
+</div>
+
+
+    <div class="row">
+
+<div class="jumbotron bg-lite text-center col-md-4" >
+<img src="img/omkar.jpeg" class="rounded  mx-auto d-block"  width="300" height="400" >
+  <h1 style="font-size:70px" >Omkar Muglikar</h1>
+  
+  
+  <div style="font-size:30px" id="app"></div>
+  
+
+  <p style="font-size:20px" > Pursuing Master's in Computer Science at Arizona State University. Machine Learning enthusiast.   </p>
+  
+  
+  <a href="https://www.linkedin.com/in/omkar-muglikar/" class="btn btn-outline-dark" role="button" target="_blank">Linkedin</a>
+    <a href="https://github.com/omkar1729" class="btn btn-outline-dark" role="button" target="_blank">GitHub</a>
+   
+
+
+  
+</div>
+
+<div class="jumbotron text-center col-md-8 " style="background-image: url(img/eq.jpg); background-size: cover; ">
+
+</div>
+
+</div>
+<hr>
+<div id="about" class="container-fluid bg-lite " style="padding-top:70px;padding-bottom:70px">
+  <h1>About</h1>
+  </div>
+  
+<div class="row top-buffer">
+<div class=" col-md-4 text-center">
+
+                <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+                    <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
+                    <p class="mb-0 mt-2 font-italic">“ Teaching is the highest form of understanding ” <a href="#" class="text-info"></a></p>
+                    <footer class="blockquote-footer pt-4 mt-4 border-top">Aristotle
+                       
+                    </footer>
+                </blockquote>
+
+            </div>
+       
+    
+
+
+<div class="col-md-8 ">
+<p style="text-justify: inter-word;padding-right: 50px;text-align: justify;"> Well, it seems Aristotle was right. I am on a similar journey to teach machines basic stuff and am learning new things daily throughout this process. I am a final year graduate student pursuing Master's degree in Computer Science at Arizona State University with a focus on machine learning.
+</p>
+
+  
+
+  <p style="text-justify: inter-word;padding-right: 50px;text-align: justify;">After being introduced to machine learning in my Bachelor's in Computer Engineering from Pune Institute of Computer Technology (PICT), I have decided to dig deeper into it. I am interested in solving real life problems with help of technology. I look forward to applying the skills and knowledge of software development, machine learning, data mining and databases to build intelligent applications.
+ </p>
+  <p style="text-justify: inter-word;padding-right: 50px;text-align: justify;">Currently, I am exploring applications of deep learning algorithms to analyze brain networks with help of Electroencephalography (EEG) signals as a part of my master’s thesis.
+
+
+</p>
+  <p ></p>
+</div>
+
+
+</div>
+
+
+ 
+
+<hr>
+<div id="cv" class="container-fluid bg-light text-center" style="padding-top:70px;padding-bottom:70px">
+  <h1>Resume/CV</h1>
+  
+  
+  <div class="btn-group " >
+  <input type="button" class="btn btn-dark " value="Resume" onclick = "openPdf()"></input>
+  
+</div>
+
+<div class="btn-group " >
+  
+  <input type="button" class="btn btn-dark " value="CV" onclick = "openPdf2()"></input>
+</div>
+  
+
+<!--  
+  <div class="row text-center">
+  <div class="col-sm-6 ">
+  <input type="button" class="btn btn-dark btn-center" value="Resume" onclick = "openPdf()"></input>
+  </div>
+  <div class="col-sm-6 ">
+  <input type="button" class="btn btn-dark btn-center" value="CV" onclick = "openPdf2()"></input>
+  </div>
+  
+</div>
+  -->
+  
+  
+  <iframe id="pdf"  style="display:none" width="100%" height="800px">
+    </iframe>
+  </div>
+<hr>
+  
+<div id="Projects" class="container-fluid bg-light" style="padding-top:70px;padding-bottom:70px">
+  <h1>Projects</h1>
+  <p style="text-align: center;">Here are a few selected projects. Planning on deploying them for real time interaction soon!!</p>
+    <p style="text-align: center;"></p>
+</div>
+  <div id="portfolio">
+            <div class="container-fluid p-1">
+                <div class="row top-buffer">
+                    <div class="col-lg-6">
+                        <a class="portfolio-box " href="https://github.com/omkar1729/Visual-question-answering-keras" target="_blank"
+                            ><img src="img/ss3.png" height="500px" width="100%" />
+                            
+                            <div class="portfolio-box-caption">
+                                
+                                <div class="project-name" style="text-align:center; font-size:40px;">Answering open ended questions based on images using deep learning approach</div>
+                                
+                            </div></a
+                        >
+                    </div>
+                    <div class="col-lg-6 ">
+                        <a class="portfolio-box" href="https://github.com/omkar1729/-Learning-Reactive-Policies-for-Collision-Avoidance-and-Agent-Detection-in-Multi-Agent-Systems-" target="_blank"
+                            ><img  src="img/arl.gif"  height="500px" width="100%" />
+                            <div class="portfolio-box-caption">
+                            <div class="project-name" style="text-align:center; font-size:40px;">Learning Reactive Policies for Collision Avoidance and Agent Detection in Multi-Agent Systems </div>
+                               
+                                
+                            </div></a
+                        >
+                    </div>
+                    </div>
+
+
+
+                    
+                   <div class="row top-buffer">
+                    
+                    <div class="col-lg-6 ">
+                        <a class="portfolio-box" href="https://github.com/omkar1729/CGM-Data-Mining" target="_blank"
+                            ><img  src="img/cgm.png" height="500px" width="100%" />
+                            <div class="portfolio-box-caption ">
+                            <div class="project-name" style="text-align:center; font-size:40px;">Meal detection using the Continuous Glucose Monitoring Data </div>
+                                
+                                
+                            </div></a
+                        >
+                    </div>
+
+
+
+
+                     <div class="col-lg-6 ">
+                        <a class="portfolio-box" href="https://github.com/omkar1729/Music-genre-Recognition---SML" target="_blank"
+                            ><img  src="img/music.png" height="500px" width="100%" />
+                            <div class="portfolio-box-caption ">
+                            <div class="project-name" style="text-align:center; font-size:40px;">Music Genre Classification  </div>
+                                
+
+                            </div></a
+                        >
+                    </div>
+			</div>
+
+			<div class="row top-buffer">
+                     <div class="col-lg-6 ">
+                        <a class="portfolio-box" href=""
+                            ><img  src="img/web.jpg" height="500px" width="100%" />
+                            <div class="portfolio-box-caption ">
+                            <div class="project-name" style="text-align:center; font-size:40px;">This website from scratch </div>
+                                
+
+                            </div></a
+                        >
+                    </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+<div id="contact" class="container-fluid bg-light" style="padding-top:70px;padding-bottom:70px">
+  <h1>Get in touch!!</h1>
+  <p style="text-align: center;">If you would like to share any relevant ideas/feedbacks about my projects, please feel free to contact me </p>
+  <div class="mx-auto text-center">
+                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                        <a class="d-block" href="mailto:om.muglikar@gmail.com">om.muglikar@gmail.com</a>
+                    </div>
+  
+</div>
+
+
+
+
+<script type="text/javascript">
+function openPdf()
+{
+var Frame = document.getElementById("pdf");
+Frame.style.display="block";
+Frame.src = "pdf/OmkarReviewResume.pdf";
+}
+
+function openPdf2()
+{
+var Frame = document.getElementById("pdf");
+Frame.style.display="block";
+Frame.src = "pdf/resume_Omkar_Muglikar.pdf";
+}
+
+function open(id,source)
+{
+var Frame = document.getElementById(id);
+Frame.style.display="block";
+Frame.src = source;
+}
+
+
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+  .pauseFor(1500)
+  .typeString('I am a Computer Science Graduate Student')
+  .pauseFor(300)
+  .deleteChars(33)
+  .pauseFor(900)
+  .typeString('Machine Learning enthusiast')
+  
+  .pauseFor(1000)
+  .start();
+
+</script>
+
+
+
+</body>
+</html>
