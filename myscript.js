@@ -18,3 +18,8 @@ var Frame = document.getElementById(id);
 Frame.style.display="block";
 Frame.src = source;
 }
+
+$(window).scroll(function(){
+    $(".fade_out").css("opacity", 1 - $(window).scrollTop() / 750);
+  });
+
