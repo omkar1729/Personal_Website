@@ -3,6 +3,7 @@
 
 <head>
 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,23 +32,6 @@
 
 
 
-.blockquote-custom {
-  position: relative;
-  font-size: 1.1rem;
-}
-
-.blockquote-custom-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: -25px;
-  left: 50px;
-}
-
 
 
 
@@ -58,56 +42,6 @@ h1 {text-align: center;
 font-size:70px;}
 p {
 font-size:25px;}
-
-
-#portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
-  max-width: 1920px;
-}
-#portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box {
-  position: relative;
-  display: block;
-}
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  text-align: left;
-  opacity: 0;
-  color: #fff;
-  background: rgba(66, 66, 66, 0.9);
-  transition: opacity 0.25s ease;
-  padding-left: 50px;
-  padding-right: 50px;
-
-}
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.00rem;
-  font-weight: 600;
-  text-transform: uppercase;
-
-}
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 1.9rem;
-}
-#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
-}
-
-
-
-
-
-.top-buffer { margin-top:20px; margin-left:20px; margin-right:20px;}
-
-
-
-
 
 
 
@@ -180,10 +114,10 @@ font-size:25px;}
 
 </div>
 <hr>
-<div id="about" class="container-fluid bg-lite " style="padding-top:70px;padding-bottom:70px">
+<div id="about" class="container-fluid" style="padding-top:70px;padding-bottom:70px;background-color: lightblue">
   <h1>About</h1>
   </div>
-  
+  <br></br>
 <div class="row top-buffer">
 <div class=" col-md-4 text-center">
 
@@ -222,7 +156,7 @@ font-size:25px;}
  
 
 <hr>
-<div id="cv" class="container-fluid bg-light text-center" style="padding-top:70px;padding-bottom:70px">
+<div id="cv" class="container-fluid text-center" style="padding-top:70px;padding-bottom:70px;background-color: lightblue">
   <h1>Resume/CV</h1>
   
   
@@ -250,12 +184,14 @@ font-size:25px;}
   -->
   
   
-  <iframe id="pdf"  style="display:none" width="100%" height="800px">
-    </iframe>
+
   </div>
+
+<iframe id="pdf"  style="display:none" width="100%" height="800px">
+    </iframe>
 <hr>
   
-<div id="Projects" class="container-fluid bg-light" style="padding-top:70px;padding-bottom:70px">
+<div id="Projects" class="container-fluid " style="padding-top:70px;padding-bottom:70px;background-color: lightblue">
   <h1>Projects</h1>
   <p style="text-align: center;">Here are a few selected projects. Planning on deploying them for real time interaction soon!!</p>
     <p style="text-align: center;"></p>
@@ -307,7 +243,8 @@ font-size:25px;}
 
                      <div class="col-lg-6 ">
                         <a class="portfolio-box" href="https://github.com/omkar1729/Music-genre-Recognition---SML" target="_blank"
-                            ><img  src="img/music.png" height="500px" width="100%" />
+                            >
+                            <img  src="img/music.png" height="500px" width="100%" />
                             <div class="portfolio-box-caption ">
                             <div class="project-name" style="text-align:center; font-size:40px;">Music Genre Classification  </div>
                                 
@@ -339,7 +276,7 @@ font-size:25px;}
             </div>
 
         </div>
-<div id="contact" class="container-fluid bg-light" style="padding-top:70px;padding-bottom:70px">
+<div id="contact" class="container-fluid" style="padding-top:70px;padding-bottom:70px;background-color: ;">
   <h1>Get in touch!!</h1>
   <p style="text-align: center;">If you would like to share any relevant ideas/feedbacks about my projects, please feel free to contact me </p>
   <div class="mx-auto text-center">
